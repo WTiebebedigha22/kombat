@@ -6,7 +6,10 @@ plugins {
 
 android {
     namespace = "com.example.game"
-    compileSdk = flutter.compileSdkVersion
+    
+    // CHANGE THIS: Explicitly set compileSdk to 34 or higher
+    compileSdk = 34
+    
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -20,7 +23,10 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        
+        // RECOMMENDATION: Match targetSdk with compileSdk
+        targetSdk = 34
+        
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
