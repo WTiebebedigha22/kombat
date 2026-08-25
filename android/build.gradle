@@ -1,0 +1,13 @@
+buildscript {
+    ext.kotlin_version = '1.9.22'  // or newer
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.0'  // Minimum for Gradle 9.0
+        // OR use 8.3.0 or 8.4.0 for better compatibility
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
